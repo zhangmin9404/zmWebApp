@@ -407,6 +407,31 @@ html {
   font-style: normal;
   font-size: 0.8rem;
 }
+.tabbar {
+  height: 1.30666667rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+}
+.tabbar ul {
+  display: flex;
+}
+.tabbar ul li {
+  list-style: none;
+  float: left;
+  flex: 1;
+  text-align: center;
+  font-size: 0.37333333rem;
+  color: #666;
+}
+.tabbar ul li img {
+  width: 0.66666667rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3px;
+}
 body {
   font-size: 0.53333333rem;
 }
