@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--按两次shift键 可以出现查找框-->
+
+<!--
+font-size=100px
+ rem单位根据html字体大小计算出的一个单位。会有一个默认缩放比取值10
+ 100px/10 = 1rem;
+设置视口,设置页面的字体大小 rem
+
+先通过webApp项目把所有准备工作做好,gulp依赖的插件下载好 node_modules文件夹 package.json文件 gulpfile.js 文件 src文件夹
+
+引入的文件是从buld文件夹开始的 因为我运行的文件是在build文件夹中
+在github中 创建webApp项目 本地clone下来 然后把写的项目上传到github中 记得忽略文件
+我的项目依赖angular 通过bower下载
+- bower install angular-ui-router 生成bower_components gulp以后会在build中生成lib文件夹 引用的文件是从build中引用的
+ 引入js
+
+1.引入 angularjs 默认less的css文件
+2.设置标题
+3,设置导航条 自定义导航指令 设置样式
+4.设置tabbar
+
+ -->
+<html lang="en" ng-app="app" ng-controller='appController'>
+<head>
+    <meta charset="UTF-8">
+    <title ng-bind='name'></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--1.导航
+3.1定义导航指令
+
+-->
+<!--<nav></nav>-->
+aaa
+<!--底部标签的切换-->
+<!--<tabbar></tabbar>-->
+
+
+</body>
+
+
+
+<!--设置页面默认字体大小-->
+<script>
+    var font = window.screen.width / 10 + 'px';
+    document.getElementsByTagName('html')[0].style.fontSize = font;
+</script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="js/index.js"></script>
+</html>
