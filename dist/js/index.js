@@ -1,0 +1,1 @@
+!function(n){"use strict";n.module("app",[]).controller("appController",["$scope",function(n){n.name="今日一刻"}])}(angular);
