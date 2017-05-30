@@ -1,1 +1,1 @@
-!function(n){"use strict";n.module("app",[]).controller("appController",["$scope",function(n){n.name="今日一刻"}])}(angular);
+!function(t){"use strict";t.module("app",[]).controller("appController",["$scope",function(t){t.name="今日一刻"}])}(angular),function(t){"use strict";t.module("app").directive("nav",function(){return{restrict:"EA",templateUrl:"../view/tpl/nav_tpl.html"}})}(angular);

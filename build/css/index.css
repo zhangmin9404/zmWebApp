@@ -389,6 +389,24 @@ p {
 .clearfix {
   clear: both;
 }
+html {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  width: 100%;
+  height: 1.70666667rem;
+  line-height: 1.70666667rem;
+  background: lightseagreen;
+  color: #ffffff;
+  text-align: center;
+}
+.nav em {
+  position: absolute;
+  left: 0;
+  font-style: normal;
+  font-size: 0.8rem;
+}
 body {
   font-size: 0.53333333rem;
 }
