@@ -23,7 +23,13 @@ font-size=100px
 5.点击tabbar选项,切换  点击tabbar中的选项,通知父级appController
 不用这个了  点击tabbar选项,切换 定义事件 所以要去声明此事件,在父级声明,自己也可以使用,因为是共用$scope的 在父级中监听点击事件 发送广播,然后在子级中监听此广播,然后改变标题
  改变tabbar中选中状态的改变
- 
+6.配置路由 使用ui-router  注入路由 在创建模块的时候
+使用多视图,是为了不想数据再加载
+在index中设置ui-view
+控制这几个页面的显示与隐藏
+
+
+
 
 
 
@@ -44,6 +50,14 @@ font-size=100px
 -->
 <nav></nav>
 
+<!--首页-->
+<div ng-show="type == 'home'" ui-view = "home"> </div>
+<!--作者-->
+<div ng-show="type =='author'" ui-view = "author"> </div>
+<!--栏目-->
+<div ng-show="type =='content'" ui-view = "content"> </div>
+<!--我的-->
+<div ng-show="type =='my'" ui-view = "my"> </div>
 <!--底部标签的切换-->
 <tabbar></tabbar>
 

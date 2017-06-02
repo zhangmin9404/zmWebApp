@@ -4,8 +4,8 @@
 (function (angular) {
     "use strict";
 
-    /*创建模块*/
-    var app= angular.module('app',[]);
+    /*创建模块 注入路由*/
+    var app= angular.module('app',['ui.router']);
 
     /*创建控制器, 行内式注入*/
     app.controller("appController",['$scope',function ($scope) {
@@ -48,6 +48,36 @@
             $scope.$broadcast('titleChange',{type:type,title:title})
         };
 
+    }])
+})(angular);
+/**
+ * Created by bobo on 2017/6/2.
+ */
+
+(function (angular) {
+
+    "use strict";
+    /*路由配置*/
+    angular.module('app').config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlRouterProvider) {
+       /*配置主路由*/
+       $stateProvider.state('app',{
+           url:'/app',
+           views:{
+               home:{
+                   template:'首页'
+               },
+               author:{
+                   template:'作者'
+               },
+               content:{
+                   template:'栏目'
+               },
+               my:{
+                   template:'我的'
+               },
+           }
+       });
+        $urlRouterProvider.otherwise('/app');
     }])
 })(angular);
 
