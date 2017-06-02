@@ -19,7 +19,14 @@ font-size=100px
 1.引入 angularjs 默认less的css文件
 2.设置标题  测试一下
 3,设置导航条 自定义导航指令 设置样式
-4.设置tabbar
+4.设置tabbar  自定义导航指令 设置样式
+5.点击tabbar选项,切换  点击tabbar中的选项,通知父级appController
+不用这个了  点击tabbar选项,切换 定义事件 所以要去声明此事件,在父级声明,自己也可以使用,因为是共用$scope的 在父级中监听点击事件 发送广播,然后在子级中监听此广播,然后改变标题
+ 改变tabbar中选中状态的改变
+ 
+
+
+
 
  -->
 <html lang="en" ng-app="app" ng-controller='appController'>
